@@ -1938,6 +1938,7 @@ void loadScore()
 }
 
 //战斗音乐（随机播放）
+/*
 void fightmusic()
 {
 	int i = rand() % 4;
@@ -1950,6 +1951,7 @@ void fightmusic()
 	else if (i == 3)
 		PlaySound(TEXT(".//music//fight3.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
+*/
 
 //地图数组为1，宝箱
 void map_1()
@@ -2121,7 +2123,7 @@ void map_5()
 	while ((c = getchar()) != EOF && c != '\n');
 	system("cls");
 
-	fightmusic();
+	//fightmusic();
 	if (characterORcharacterprinting == 0)
 	{
 		picturePainting(".//pic//TXT//role//ASCII-boss0.txt", 601, 198);
@@ -2151,7 +2153,7 @@ void map_5()
 
 	setConsoleDefault();
 	mapPrint(protagonist);
-	PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
 
 //地图数组为6，道馆Boss2
@@ -2173,7 +2175,7 @@ void map_6()
 	while ((c = getchar()) != EOF && c != '\n');
 	system("cls");
 
-	fightmusic();
+	//fightmusic();
 	if (characterORcharacterprinting == 0)
 	{
 		picturePainting(".//pic//TXT//role//ASCII-boss1.txt", 601, 198);
@@ -2203,7 +2205,7 @@ void map_6()
 
 	setConsoleDefault();
 	mapPrint(protagonist);
-	PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
 
 //地图数组为7，道馆Boss3
@@ -2223,7 +2225,7 @@ void map_7()
 	while ((c = getchar()) != EOF && c != '\n');
 	system("cls");
 
-	fightmusic();
+	//fightmusic();
 	if (characterORcharacterprinting == 0)
 	{
 		picturePainting(".//pic//TXT//role//ASCII-boss2.txt", 601, 198);
@@ -2253,7 +2255,7 @@ void map_7()
 
 	setConsoleDefault();
 	mapPrint(protagonist);
-	PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
 
 //地图数组为8，道馆Boss4
@@ -2274,7 +2276,7 @@ void map_8()
 	while ((c = getchar()) != EOF && c != '\n');
 	system("cls");
 
-	fightmusic();
+	//fightmusic();
 	if (characterORcharacterprinting == 0)
 	{
 		picturePainting(".//pic//TXT//role//ASCII-boss3.txt", 601, 198);
@@ -2304,7 +2306,7 @@ void map_8()
 
 	setConsoleDefault();
 	mapPrint(protagonist);
-	PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
 
 //地图数组为9，道馆Boss5
@@ -2326,7 +2328,7 @@ void map_9()
 	while ((c = getchar()) != EOF && c != '\n');
 	system("cls");
 
-	fightmusic();
+	//fightmusic();
 	if (characterORcharacterprinting == 0)
 	{
 		picturePainting(".//pic//TXT//role//ASCII-boss4.txt", 601, 198);
@@ -2356,7 +2358,7 @@ void map_9()
 
 	setConsoleDefault();
 	mapPrint(protagonist);
-	PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 }
  
 //地图数组为10，NPC
@@ -2372,7 +2374,7 @@ void map_10()
 	while ((c = getchar()) != EOF && c != '\n');
 	system("cls");
 
-	fightmusic();
+	//fightmusic();
 	if (characterORcharacterprinting == 0)
 	{
 		picturePainting(".//pic//TXT//fightScene//ASCII-fightScene_npc.txt", 601, 198);
@@ -2400,7 +2402,7 @@ void map_10()
 
 	setConsoleDefault();
 	mapPrint(protagonist);
-	PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 } 
 
 //地图数组为5~9但已成功挑战道馆
@@ -2446,7 +2448,7 @@ void map_0()
 	{
 		saber_nivose_one = 1;
 
-		fightmusic();
+		//fightmusic();
 		if (characterORcharacterprinting == 0)
 		{
 			system("cls");
@@ -2492,7 +2494,7 @@ void map_0()
 
 		setConsoleDefault();
 		mapPrint(protagonist);
-		PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+		//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 	}
 }
 
@@ -2651,7 +2653,7 @@ int main()
 	//初始化
 	srand(time(NULL));
 	system("mode con cols=1500 lines=1000");
-	PlaySound(TEXT(".//music//cover.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//cover.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 	coverPrint();
 
 	//初始化
@@ -2662,7 +2664,7 @@ int main()
 	gotoxy(pos.X, pos.Y);
 	color(14);
 	cout << "S";
-	PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	//PlaySound(TEXT(".//music//map.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 
 	//进入消息循环
 	while (1)
